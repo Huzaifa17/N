@@ -179,7 +179,7 @@ otp_storage = {}
 def send_otp_email(email, otp):
     try:
         # Configure SendGrid API key
-        sg = SendGridAPIClient(os.getenv('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'))
+        sg = SendGridAPIClient(os.getenv('sendGridAPI'))
 
         # Create the email message
         message = Mail(
